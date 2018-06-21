@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <ul>
+ <li>click me</li>
+ <li>click me</li>
+ <li>click me</li>
+ <li>click me</li>
+</ul>
+    </body>
+</html>
+<script type="text/javascript">
+    var elements=document.getElementsByTagName('li');
+    var length=elements.length;
+    for(var i=0;i<length;i++){
+        elements[i].onclick=function(){
+        alert(i);
+    }
+ }
+</script>
